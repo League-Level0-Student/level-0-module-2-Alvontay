@@ -3,6 +3,26 @@ package _03_string_conversion._2_strings_cannot_add;
 import javax.swing.JOptionPane;
 
 public class StringsCannotAdd {
+	
+	public static void main(String[] args) {
+		String fourAsString = JOptionPane.showInputDialog("enter number 4");
+		String sixAsString = JOptionPane.showInputDialog("enter number 6");	
+		
+		JOptionPane.showMessageDialog(null, sixAsString + fourAsString);
+		
+		String fiveAsString = JOptionPane.showInputDialog("enter number 5");	
+		
+		JOptionPane.showMessageDialog(null, fourAsString + fiveAsString + sixAsString);
+		
+		int fourAsInt = Integer.parseInt(fourAsString);
+		int sixAsInt = Integer.parseInt(sixAsString);
+		
+		JOptionPane.showMessageDialog(null, sixAsInt + fourAsInt);
+		
+		int fiveAsInt = Integer.parseInt(fiveAsString);
+		
+		JOptionPane.showMessageDialog(null, fourAsInt + fiveAsInt + sixAsInt);
+	}
 
 		// 1) Make a main method that includes all the steps below…. 
 		
